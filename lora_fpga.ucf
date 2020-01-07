@@ -1,0 +1,30 @@
+
+
+NET "sw2" LOC = T8;
+NET "led1" LOC = T9;
+NET "sw3" LOC = R7;
+NET "led3" LOC = R9;
+
+
+NET "dat_out[7]" LOC = F16;
+NET "dat_out[6]" LOC = F12;
+NET "dat_out[5]" LOC = F13;
+NET "dat_out[4]" LOC = G14;
+NET "dat_out[3]" LOC = H16;
+NET "dat_out[2]" LOC = H11;
+NET "dat_out[1]" LOC = H14;
+NET "dat_out[0]" LOC = J16;
+NET "txe" LOC = E16;
+NET "wr_out" LOC = D16;
+NET "clk_out" LOC = C16;
+NET "txe_copy" LOC = B12;
+NET "wr_copy" LOC = C11;
+NET "clk_in" LOC = P12;
+NET "dat_in[0]" LOC = M10;
+NET "dat_in[1]" LOC = N9;
+NET "dat_in[2]" LOC = T6;
+NET "dat_in[3]" LOC = T5;
+
+NET "clk_in" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk_out" CLOCK_DEDICATED_ROUTE = FALSE;
+
