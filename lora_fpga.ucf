@@ -6,25 +6,47 @@ NET "sw3" LOC = R7;
 NET "led3" LOC = R9;
 
 
-NET "dat_out[7]" LOC = F16;
-NET "dat_out[6]" LOC = F12;
-NET "dat_out[5]" LOC = F13;
-NET "dat_out[4]" LOC = G14;
-NET "dat_out[3]" LOC = H16;
-NET "dat_out[2]" LOC = H11;
-NET "dat_out[1]" LOC = H14;
-NET "dat_out[0]" LOC = J16;
-NET "txe" LOC = E16;
-NET "wr_out" LOC = D16;
-NET "clk_out" LOC = C16;
-NET "txe_copy" LOC = B12;
-NET "wr_copy" LOC = C11;
-NET "clk_in" LOC = P12;
-NET "dat_in[0]" LOC = M10;
-NET "dat_in[1]" LOC = N9;
-NET "dat_in[2]" LOC = T6;
-NET "dat_in[3]" LOC = T5;
+NET "dat_in[0]" LOC = J16;
+NET "dat_in[1]" LOC = H14;
+NET "dat_in[2]" LOC = H11;
+NET "dat_in[3]" LOC = H16;
 
 NET "clk_in" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "clk_out" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "clock_instance/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
 
+
+
+
+NET "clk_in" LOC = C16;
+NET "clk_out" LOC = N14;
+NET "rxf" LOC = E16;
+NET "rd_out" LOC = D16;
+NET "dat_in[4]" LOC = G14;
+NET "dat_in[5]" LOC = F13;
+NET "dat_in[6]" LOC = F12;
+NET "dat_in[7]" LOC = F16;
+NET "dat_out[0]" LOC = L14;
+NET "dat_out[1]" LOC = K12;
+NET "dat_out[2]" LOC = L13;
+NET "dat_out[3]" LOC = P16;
+
+
+NET "sp_valid" LOC = K16;
+
+
+
+
+NET "clk_out_copy" LOC = M13;
+
+
+NET "clk_in" IN_TERM = UNTUNED_SPLIT_50;
+
+
+NET "clk_out_copy" IOSTANDARD = LVCMOS25;
+NET "clk_out_copy" DRIVE = 24;
+NET "clk_out_copy" SLEW = FAST;
+
+# PlanAhead Generated physical constraints 
+
+NET "SYS_CLK" LOC = A10;
